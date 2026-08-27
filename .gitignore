@@ -1,0 +1,17 @@
+# Système et éditeur
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+
+# Dépendances et environnements
+node_modules/
+venv/
+.venv/
+
+# Fichiers temporaires
+*.log
+*.tmp
+.env
+.env.*
+!.env.example
