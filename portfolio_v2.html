@@ -936,6 +936,34 @@
       padding: 22px;
     }
 
+    .project-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 18px;
+    }
+
+    .project-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border: 1px solid var(--accent);
+      border-radius: var(--radius);
+      background: rgba(33, 212, 244, 0.08);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    }
+
+    .project-action:hover {
+      background: var(--accent);
+      color: var(--bg);
+      transform: translateY(-2px);
+    }
+
     .project-cat {
       font-size: 0.72rem;
       text-transform: uppercase;
@@ -2210,9 +2238,9 @@
         <div class="projects-grid reveal">
           <div class="project-card" data-cat="data">
             <div class="project-thumb">
-              <img src="images/project-scraper.svg" alt="Illustration du scraper CoinAfrique">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Photo illustrative d’un espace de commerce pour le scraper CoinAfrique" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-scraper.svg'">
               <div class="overlay">
-                <a href="https://github.com/DJIBRAEL/my_first_app" target="_blank" title="Code source"><i
+                <a href="https://github.com/DJIBRAEL/App_Data_collection-" target="_blank" rel="noopener noreferrer" title="Code source"><i
                     class="fa-brands fa-github"></i></a>
               </div>
             </div>
@@ -2222,12 +2250,15 @@
               <div class="project-desc">Application web pour collecter, analyser et visualiser des produits avec SQLite
                 et dashboards interactifs.</div>
               <div class="project-tags"><span>Python</span><span>SQLite</span><span>Dashboard</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://github.com/DJIBRAEL/App_Data_collection-#readme-ov-file" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-eye"></i> Voir l’aperçu</a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-cat="bi-ml">
             <div class="project-thumb">
-              <img src="images/project-powerbi.svg" alt="Illustration des dashboards Power BI">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Visualisation de données et tableaux de bord pour le projet Power BI" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-powerbi.svg'">
               <div class="overlay">
                 <a href="https://github.com/DJIBRAEL/Les-Projets-sur-Power-BI" target="_blank" title="Code source"><i
                     class="fa-brands fa-github"></i></a>
@@ -2239,12 +2270,15 @@
               <div class="project-desc">Série de projets de modélisation de données et de conception de tableaux de bord
                 analytiques complexes.</div>
               <div class="project-tags"><span>Power BI</span><span>DAX</span><span>DataViz</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://github.com/DJIBRAEL/Les-Projets-sur-Power-BI" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-chart-column"></i> Voir les rapports</a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-cat="bi-ml">
             <div class="project-thumb">
-              <img src="images/project-ml.svg" alt="Illustration de l'application de machine learning">
+              <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Illustration photographique de l’intelligence artificielle pour l’application Machine Learning" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-ml.svg'">
               <div class="overlay">
                 <a href="https://github.com/DJIBRAEL/App_Machine_Learning" target="_blank" title="Code source"><i
                     class="fa-brands fa-github"></i></a>
@@ -2256,12 +2290,15 @@
               <div class="project-desc">Intégration de modèles prédictifs d'apprentissage automatique pour résoudre des
                 problèmes métiers.</div>
               <div class="project-tags"><span>Python</span><span>Scikit-Learn</span><span>Machine Learning</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://github.com/DJIBRAEL/App_Machine_Learning" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-eye"></i> Voir l’aperçu</a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-cat="data">
             <div class="project-thumb">
-              <img src="images/project-titanic.svg" alt="Illustration de l'analyse du Titanic">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/RMS_Titanic_3.jpg" alt="Photographie historique du Titanic, sujet de l’analyse de données" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-titanic.svg'">
               <div class="overlay">
                 <a href="https://github.com/DJIBRAEL/projet-Titanic-python" target="_blank" title="Code source"><i
                     class="fa-brands fa-github"></i></a>
@@ -2273,31 +2310,37 @@
               <div class="project-desc">Projet classique d'analyse exploratoire et prédictive de données en utilisant
                 les bibliothèques Pandas.</div>
               <div class="project-tags"><span>Jupyter</span><span>Pandas</span><span>Classification</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://github.com/DJIBRAEL/projet-Titanic-python/blob/main/titanic_analysis.ipynb" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Voir l’analyse</a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-cat="software">
             <div class="project-thumb">
-              <img src="images/project-iot.svg" alt="Illustration du dashboard IoT">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Carte électronique et composants pour le projet de tableau de bord IoT" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-iot.svg'">
               <div class="overlay">
-                <a href="https://wokwi.com/projects/459511741623122945" target="_blank" title="Démo en direct"><i
+                <a href="https://wokwi.com/projects/459511741623122945" target="_blank" rel="noopener noreferrer" title="Démo en direct"><i
                     class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a href="https://github.com/DJIBRAEL/Projet_IOT" target="_blank" title="Code source"><i
+                <a href="https://github.com/DJIBRAEL/Projet_IOT" target="_blank" rel="noopener noreferrer" title="Code source"><i
                     class="fa-brands fa-github"></i></a>
               </div>
             </div>
             <div class="project-body">
               <div class="project-cat">IoT & Web</div>
               <div class="project-title">Dashboard IoT</div>
-              <div class="project-desc">Tableau de bord interactif déployé sur Vercel pour visualiser en continu les
-                données capteurs connectés.</div>
+              <div class="project-desc">Simulation d’un tableau de bord IoT qui visualise les mesures de température
+                et d’humidité d’un capteur connecté.</div>
               <div class="project-tags"><span>HTML/CSS</span><span>JavaScript</span><span>Vercel</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://wokwi.com/projects/459511741623122945" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-play"></i> Lancer la démo</a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-cat="bi-ml">
             <div class="project-thumb">
-              <img src="images/project-credit-risk.svg" alt="Illustration de la prédiction du risque de crédit">
+              <img src="https://raw.githubusercontent.com/DJIBRAEL/Prediction_risque_credit/master/assets/hero.jpg" alt="Visuel réel du projet de prédiction du risque de crédit" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-credit-risk.svg'">
               <div class="overlay">
                 <a href="https://github.com/DJIBRAEL/Prediction_risque_credit" target="_blank" title="Code source"><i
                     class="fa-brands fa-github"></i></a>
@@ -2308,12 +2351,15 @@
               <div class="project-title">Prédiction du risque de crédit</div>
               <div class="project-desc">Application Streamlit qui évalue la probabilité de défaut d'un emprunteur à partir du Credit Risk Dataset.</div>
               <div class="project-tags"><span>Python</span><span>Streamlit</span><span>XGBoost</span><span>Scikit-learn</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://github.com/DJIBRAEL/Prediction_risque_credit" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-eye"></i> Voir l’aperçu</a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-cat="data">
             <div class="project-thumb">
-              <img src="images/project-sql.svg" alt="Illustration du projet SQL">
+              <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Infrastructure de données pour le projet SQL" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-sql.svg'">
               <div class="overlay">
                 <a href="https://github.com/DJIBRAEL/Projet-SQL" target="_blank" title="Code source"><i
                     class="fa-brands fa-github"></i></a>
@@ -2325,12 +2371,15 @@
               <div class="project-desc">Conception et optimisation de bases de données relationnelles avec requêtes
                 avancées et modélisation de données.</div>
               <div class="project-tags"><span>SQL</span><span>Base de données</span><span>Modélisation</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://github.com/DJIBRAEL/Projet-SQL#readme" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-eye"></i> Voir l’aperçu</a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-cat="data">
             <div class="project-thumb">
-              <img src="images/project-scraping.svg" alt="Illustration de la collecte de données par scraping">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Ordinateur affichant des données web pour le projet de scraping" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-scraping.svg'">
               <div class="overlay">
                 <a href="https://github.com/DJIBRAEL/Scraping-of-data-collection" target="_blank" title="Code source"><i
                     class="fa-brands fa-github"></i></a>
@@ -2342,12 +2391,15 @@
               <div class="project-desc">Outil automatisé pour la collecte de données par extraction web (scraping), leur nettoyage et leur structuration pour l'analyse.</div>
               <div class="project-tags">
                 <span>Python</span><span>SQLite</span><span>Scraping</span><span>Dashboard</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://github.com/DJIBRAEL/Scraping-of-data-collection/blob/main/Web%20Scraping%20using%20BeautifulSoup.ipynb" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Voir le notebook</a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-cat="bi-ml">
             <div class="project-thumb">
-              <img src="images/project-deep-learning.svg" alt="Illustration du projet de deep learning">
+              <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Illustration visuelle de réseaux neuronaux pour le projet de deep learning" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-deep-learning.svg'">
               <div class="overlay">
                 <a href="https://github.com/DJIBRAEL/Deep-Learning-" target="_blank" title="Code source"><i
                     class="fa-brands fa-github"></i></a>
@@ -2360,12 +2412,15 @@
                 et la prédiction avancée.</div>
               <div class="project-tags"><span>Python</span><span>TensorFlow</span><span>Deep
                   Learning</span><span>IA</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://github.com/DJIBRAEL/Deep-Learning-/blob/main/projet%20deeplearning.ipynb" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> Voir le notebook</a>
+              </div>
             </div>
           </div>
 
           <div class="project-card" data-cat="software">
             <div class="project-thumb">
-              <img src="images/project-library.svg" alt="Illustration du système de gestion de bibliothèque">
+              <img src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Rayonnages de bibliothèque pour le projet Biblio Manager" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='images/project-library.svg'">
               <div class="overlay">
                 <a href="https://github.com/DJIBRAEL/Systeme_Gestion_Bibliotheque_DIT_mode_console" target="_blank"
                   title="Code source"><i class="fa-brands fa-github"></i></a>
@@ -2377,6 +2432,9 @@
               <div class="project-desc">Système de gestion de bibliothèque développé en Python pour la gestion autonome
                 des livres et des membres via console.</div>
               <div class="project-tags"><span>Python</span><span>Software</span><span>Console</span></div>
+              <div class="project-actions">
+                <a class="project-action" href="https://github.com/DJIBRAEL/Systeme_Gestion_Bibliotheque_DIT_mode_console" target="_blank" rel="noopener noreferrer"><i class="fa-regular fa-eye"></i> Voir l’aperçu</a>
+              </div>
             </div>  
           </div>
         </div>
